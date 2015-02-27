@@ -59,3 +59,6 @@ class Provider(object):
         The ``email`` and ``id`` keys are required, ``name`` is optional.
         """
         raise NotImplementedError
+
+    def identity_is_valid(self, auth_identity):
+        raise NotImplementedError

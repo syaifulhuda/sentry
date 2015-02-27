@@ -22,3 +22,6 @@ class DummyProvider(Provider):
 
     def build_identity(self, state):
         return state['email']
+
+    def identity_is_valid(self, auth_identity):
+        return True
